@@ -1,0 +1,103 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .appointment-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFF0E5;
+            padding: 25px 40px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .appointment-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 20px 0;
+            width: 100%;
+        }
+         .appointment-input {
+            border: 2px solid #FFE0C4;
+            border-radius: 20px;
+            padding: 10px;
+            width: 100%;
+            height: 42px;
+        }
+        .appointment-form-inner{
+            display: flex;
+            /* gap: 10px; */
+            width: 100%;
+        }
+        .appointment-input-inner1{
+            border: 2px solid #FFE0C4;
+            border-radius: 20px 0 0 20px;
+            padding: 10px;
+            width:100%;
+            height: 42px;
+        }
+         .appointment-input-inner2{
+            border: 2px solid #FFE0C4;
+            border-radius:0 20px  20px 0;
+            padding: 10px;
+            width: 50%;
+            height: 42px;
+            text-align: center;
+            background-color: #462512;
+            color: white;
+        }
+     .appointment3-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+        .appointment-button{
+            background-color: #FF6F1E;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+            width: 30%;
+        }
+        @media (max-width: 797px) {
+    .appointment-section {
+        padding: 15px;
+    }
+    .appointment-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .appointment-input,
+    .appointment-form-inner {
+        width: 100%;
+    }
+    .appointment-input-inner1,
+    .appointment-input-inner2 {
+        width: 70%;
+    }
+    .appointment-input-inner2 {
+        width: 30%;
+    }
+    .appointment3-button {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .appointment-button {
+        width: 100%;
+    }
+}
+
+ 

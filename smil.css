@@ -1,0 +1,54 @@
+ 
+        .smileImg {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            object-fit: contain;
+           
+        }
+
+        .smile-wrapper {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+            overflow-x: auto;
+            /* enables carousel scroll */
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            /* Firefox */
+            padding: 0 20px;
+            /* ✅ ensures first & last items are visible */
+            scroll-snap-type: x mandatory;
+            /* ✅ snap scrolling */
+        }
+
+        .smile-wrapper::-webkit-scrollbar {
+            display: none;
+            /* Chrome/Safari */
+        }
+
+        .smile-card {
+            flex: 0 0 auto;
+            /* prevents shrinking */
+            text-align: left;
+            max-width: 300px;
+            scroll-snap-align: start;
+            /* ✅ align each card properly */
+        }
+
+        .smile-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+
+        .smile-info p:last-child {
+            color: #EA7D28;
+        }
+
+        /* Optional: add drag-to-scroll effect for mouse */
+        .smile-wrapper.dragging {
+            cursor: grabbing;
+            scroll-behavior: auto;
+        }
+ 

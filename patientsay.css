@@ -1,0 +1,80 @@
+ 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+
+        .patient-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .patient-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .patient-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Carousel container */
+        .patient-carousel {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 20px;
+            cursor: grab;
+        }
+
+        .patient-carousel.dragging {
+            cursor: grabbing;
+        }
+
+        .patient-carousel::-webkit-scrollbar {
+            display: none;
+            /* hide scrollbar */
+        }
+
+        .patient-slide {
+            flex: 0 0 auto;
+            width: 220px;
+            background: #fff;
+            border-radius: 12px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .patient-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .patient-info {
+            padding: 10px 0;
+        }
+
+        .patient-info h3 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .patient-info p {
+            font-size: 14px;
+            margin: 2px 0;
+            color: #666;
+        }
+
+        .treatment {
+            color: orange;
+            font-weight: bold;
+        }
+    

@@ -1,0 +1,150 @@
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .rootCanel-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .rootCanel-container1 {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .rootCanel-innerContainer {
+            display: flex;
+            flex: 1;
+            min-width: 350px;
+            gap: 20px;
+            border: 1px solid gray;
+            margin-top: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .rootCnel-image {
+            width: 350px;
+            height: 350px;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 20px 0 0 20px;
+            flex-shrink: 0;
+        }
+
+        .rootCanel-content {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .rootCanel-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .rootCanel-content p,
+        .rootCanel-content ul {
+            margin-bottom: 15px;
+            color: grey;
+        }
+
+        .rootCanel-content button {
+            background-color: #EA7D28;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        /* Tablet (1024px) */
+        @media (max-width: 1024px) {
+            .rootCanel-innerContainer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .rootCnel-image {
+                width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .rootCanel-content {
+                padding: 20px;
+                text-align: left;
+            }
+        }
+
+        /* Tablet (768px) */
+        @media (max-width: 768px) {
+            .rootCanel-innerContainer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .rootCnel-image {
+                width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .rootCanel-content {
+                padding: 20px;
+                text-align: left;
+            }
+        }
+
+        /* Mobile (425px → carousel) */
+        @media (max-width: 425px) {
+            .rootCanel-container1 {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                gap: 10px;
+            }
+
+            .rootCanel-innerContainer {
+                flex: 0 0 100%;
+                scroll-snap-align: center;
+                margin-top: 0;
+            }
+
+            .rootCnel-image {
+                width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .rootCanel-content {
+                padding: 15px;
+            }
+
+            /* Hide scrollbar */
+            .rootCanel-container1::-webkit-scrollbar {
+                display: none;
+            }
+
+            .rootCanel-container1 {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+       
+    
